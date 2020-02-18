@@ -1,0 +1,20 @@
+{
+  "name": "cypress-stub-response",
+  "version": "1.0.0",
+  "description": "Stubbing cypress code",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "cypress",
+    "stub",
+    "response",
+    "code"
+  ],
+  "author": "Alen",
+  "license": "ISC",
+  "devDependencies": {
+    "cypress": "^4.0.2"
+  }
+}
