@@ -2,7 +2,6 @@
 
 context('Stub response', () => {
   it('status to be 500', () => {
-    // usually returns 200
     cy.visit('http://demo.realworld.io/#/login');
     
     cy.server();
@@ -14,6 +13,7 @@ context('Stub response', () => {
       response: { error: "Internal server error"}
     }).as('postLogin');
 
+    // usually returns 200 but in this test returns 500
     cy.get('input[placeholder="Email"]')
       .type('test@500.com')
       .get('input[placeholder="Password"]')
